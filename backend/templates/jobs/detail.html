@@ -1,0 +1,47 @@
+{% extends "shared/base.html" %}
+
+
+{% block title %}
+  <title>User Details</title>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="display-5">User Detail</h1>
+    </div>
+  </div>
+
+  <div class="row">
+      <table class="table table-striped table-hover">
+        <tbody>
+          <tr>
+            <th scope="row">User Name</th>
+            <td colspan="2">{{job.name}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Adhar Number</th>
+            <td colspan="2">{{job.adhar}}</td>
+          </tr>
+          <!-- <tr>
+            <th scope="row">Company URL</th>
+            <td colspan="2">{{job.company_url}}</td>
+          </tr> -->
+          <!-- <tr>
+            <th scope="row">Description</th>
+            <td colspan="2">{{job.description}}</td>
+          </tr> -->
+          <tr>
+            <th scope="row">Pen Card Number</th>
+            <td colspan="2">{{job.pen}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Data Published</th>
+            <td colspan="2">{{job.date_posted}}</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
